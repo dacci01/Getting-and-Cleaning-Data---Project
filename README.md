@@ -1,8 +1,10 @@
 Repo contains the following files:
 
-#README.md - this file
+#README.md 
+this file
 
-#run_analysis.R - which performs the following operations to the archive data described below.
+#run_analysis.R
+ performs the following operations to the archive data described below.
 
  The following script is used to manipulate and summarize data collected 
  from 30 subjects, performing a variety of activities while wearing a
@@ -47,5 +49,6 @@ Repo contains the following files:
                          activity and for each subject.
 
 and
-#CodeBook.md - a code book that describes the variables within the data set, a brief description of how run_analysis. R processes that data set.
+#CodeBook.md 
+a code book that describes the variables within the data set, a brief description of how run_analysis. R processes that data set.
 
