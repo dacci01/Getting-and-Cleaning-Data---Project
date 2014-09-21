@@ -1,7 +1,8 @@
-Data Code Book
+
+##Data Code Book
 
 
-Detailed Data Archive Description
+###Detailed Data Archive Description
 
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
@@ -48,18 +49,18 @@ Notes:
 - Each feature vector is a row on the text file.
 -For more information about this dataset contact: activityrecognition@smartlab.ws
 
-License:
-Use of this dataset in publications must be acknowledged by referencing the following publication  
+*License:
+Use of this dataset in publications must be acknowledged by referencing the following publication*  
 
-Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+**Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012**
 
-This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+#####This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
 
 
-Data Acquisition, Processing and Variable Description
+###Data Acquisition, Processing and Variable Description
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -87,9 +88,6 @@ fBodyAccMag
 fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
-
-
-
 
 
 The set of variables that were estimated from these signals are: 
@@ -122,262 +120,258 @@ tBodyGyroJerkMean
 The complete list of variables of each feature vector is available in 'features.txt'
 
 
-
-Data Set Variable Descriptions
+
+###Data Set Variable Descriptions
 
 A subset of the variable descriptions were extracted and processed using the run_analysis. R script. The variables, 81 total, consist of all mean and standard deviation variables along with the subject and activity identifiers from the data archive. Variable labels and data type are described below. 
 
-subject				Type Integer
+>**subject**				*Type Integer*  
 1-30 based on number of subject in experiment 
 
-activity				Type Factor
+>**activity**				*Type Factor*  
 6 character labels representing the different subject activities when measurements were collected.
 LABELS: SITTING, LAYING, STANDING, WALKING, WALKING_DOWNSTAIRS, and WALKING_UPSTAIRS 
 
-Following are time dependent quantities:
+#####Following are time dependent quantities:
 	
-tBodyAcc-mean()-X		Type Numeric
-Mean body acceleration in X-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time series. )
+>**tBodyAcc-mean()-X**		*Type Numeric*  
+Mean body acceleration in X-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time     series. )
 	
-tBodyAcc-mean()-Y		Type Numeric
+>**tBodyAcc-mean()-Y**		*Type Numeric*  
 Mean body acceleration in Y-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time series. )
 	
-tBodyAcc-mean()-Z		Type Numeric
+>**tBodyAcc-mean()-Z**		*Type Numeric*  
 Mean body acceleration in Z-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time series. )
 	
-tBodyAcc-std()-X		Type Numeric
+>**tBodyAcc-std()-X**		*Type Numeric*  
 Standard deviation of body acceleration in X-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time series. )
 	
-tBodyAcc-std()-Y		Type Numeric
+>**tBodyAcc-std()-Y**		*Type Numeric*  
 Standard deviation of body acceleration in Y-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time series. )
 
-tBodyAcc-std()-Z		Type Numeric
+>**tBodyAcc-std()-Z**		*Type Numeric*  
 Standard deviation of body acceleration in Z-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time series. )
 	
-tGravityAcc-mean()-X	Type Numeric
+>**tGravityAcc-mean()-X**	*Type Numeric*	*Type Numeric*  
 Mean gravity acceleration in X-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time series. )
 	
-tGravityAcc-mean()-Y	Type Numeric
+>**tGravityAcc-mean()-Y**	*Type Numeric*  
 Mean gravity acceleration in Y-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time series. )
 	
-tGravityAcc-mean()-Z		Type Numeric
+>**tGravityAcc-mean()-Z**	*Type Numeric*  
 Mean gravity acceleration in Z-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time series. )
 	
-tGravityAcc-std()-X		Type Numeric
+>**tGravityAcc-std()-X**	*Type Numeric*  
 Standard deviation of gravity acceleration in X-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time series. )
 	
-tGravityAcc-std()-Y		Type Numeric
+>**tGravityAcc-std()-Y**	*Type Numeric*  
 Standard deviation of gravity acceleration in Y-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time series. )
 	
-tGravityAcc-std()-Z		Type Numeric
+>**tGravityAcc-std()-Z**	*Type Numeric*  
 Standard deviation of gravity acceleration in Z-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time series. )
 
-tBodyAccJerk-mean()-X	Type Numeric
+>**tBodyAccJerk-mean()-X**	*Type Numeric*  
 Mean jerk body acceleration in X-direction. Quantity is the time rate of change of acceleration, units, G’s/second. ( t denotes time series. )
 
-tBodyAccJerk-mean()-Y	Type Numeric
+>**tBodyAccJerk-mean()-Y**	*Type Numeric*  
 Mean jerk body acceleration in Y-direction. Quantity is the time rate of change of acceleration, units, G’s/second. ( t denotes time series. )
 
-tBodyAccJerk-mean()-Z	Type Numeric
+>**tBodyAccJerk-mean()-Z**	*Type Numeric*  
 Mean jerk body acceleration in Z-direction. Quantity is the time rate of change of acceleration, units, G’s/second. ( t denotes time series. )
 
-tBodyAccJerk-std()-X		Type Numeric
+>**tBodyAccJerk-std()-X	**	*Type Numeric*  
 Standard deviation of the jerk body acceleration in X-direction. Quantity is the time rate of change of acceleration, units, G’s/second. ( t denotes time series. )
 
-tBodyAccJerk-std()-Y		Type Numeric
+>**tBodyAccJerk-std()-Y**	*Type Numeric*  
 Standard deviation of the jerk body acceleration in Y-direction. Quantity is the time rate of change of acceleration, units, G’s/second. ( t denotes time series. )
 
-tBodyAccJerk-std()-Z		Type Numeric
+>**tBodyAccJerk-std()-Z**	*Type Numeric*  
 Standard deviation of the jerk body acceleration in Z-direction. Quantity is the time rate of change of acceleration, units, G’s/second. ( t denotes time series. )
 
-tBodyGyro-mean()-X		Type Numeric
+>**tBodyGyro-mean()-X**		*Type Numeric*  
 Mean body angular velocity in X-direction. Quantity has units of radians/second. ( t denotes time series. )
 
-tBodyGyro-mean()-Y		Type Numeric
+>**tBodyGyro-mean()-Y**		*Type Numeric*  
 Mean body angular velocity in Y-direction. Quantity has units of radians/second. ( t denotes time series. )
 
-tBodyGyro-mean()-Z		Type Numeric
+>**tBodyGyro-mean()-Z**		*Type Numeric*  
 Mean body angular velocity in Z-direction. Quantity has units of radians/second. ( t denotes time series. )
 
-tBodyGyro-std()-X		Type Numeric
+>**tBodyGyro-std()-X**		*Type Numeric*  
 Standard deviation of the body angular velocity in X-direction. Quantity has units of radians/second. ( t denotes time series. )
 
-tBodyGyro-std()-Y		Type Numeric
+>**tBodyGyro-std()-Y**		*Type Numeric*  
 Standard deviation of the body angular velocity in Y-direction. Quantity has units of radians/second. ( t denotes time series. )
 
-tBodyGyro-std()-Z		Type Numeric
+>**tBodyGyro-std()-Z**	*Type Numeric*  
 Standard deviation of the body angular velocity in Z-direction. Quantity has units of radians/second. ( t denotes time series. )
 
-tBodyGyroJerk-mean()-X	Type Numeric
+>**tBodyGyroJerk-mean()-X**	*Type Numeric*  
 Mean body gyro-jerk product in X-direction. Quantity has units of G’s/sq.second. ( t denotes time series. )
 
-tBodyGyroJerk-mean()-Y	Type Numeric
+>**tBodyGyroJerk-mean()-Y**	*Type Numeric*  
 Mean body gyro-jerk product in X-direction. Quantity has units of G’s/sq.second. ( t denotes time series. )
 
-tBodyGyroJerk-mean()-Z	Type Numeric
+>**tBodyGyroJerk-mean()-Z**	*Type Numeric*  
 Mean body gyro-jerk product in X-direction. Quantity has units of G’s/sq.second. ( t denotes time series. )
 
-tBodyGyroJerk-std()-X	Type Numeric
+>**tBodyGyroJerk-std()-X**	*Type Numeric*  
 Standard deviation of the body gyro-jerk product in X-direction. Quantity has units of G’s/sq.second. ( t denotes time series. )
 
-tBodyGyroJerk-std()-Y	Type Numeric
+>**tBodyGyroJerk-std()-Y**	*Type Numeric*  
 Standard deviation of the body gyro-jerk product in X-direction. Quantity has units of G’s/sq.second. ( t denotes time series. )
 
-tBodyGyroJerk-std()-Z	Type Numeric
+>**tBodyGyroJerk-std()-Z**	*Type Numeric*  
 Standard deviation of the body gyro-jerk product in X-direction. Quantity has units of G’s/sq.second. ( t denotes time series. )
 
-tBodyAccMag-mean()	Type Numeric
+>**tBodyAccMag-mean()**		*Type Numeric*  
 Mean body acceleration magnitude. Quantity is a scalar unit, G’s of gravitational acceleration. It is the square root of the sum of the squares of the XYZ components. ( t denotes time series. )
 
-tBodyAccMag-std()		Type Numeric
+>**tBodyAccMag-std()**	*Type Numeric*  
 Standard deviation of the body acceleration magnitude. Quantity is a scalar unit, G’s of gravitational acceleration. ( t denotes time series. )
 
-tGravityAccMag-mean()	Type Numeric
+>**tGravityAccMag-mean()**	*Type Numeric*  
 Mean gravity acceleration magnitude. Quantity is a scalar unit, G’s of gravitational acceleration. It is the square root of the sum of the squares of the XYZ components. ( t denotes time series. )
 
-tGravityAccMag-std()		Type Numeric
+>**tGravityAccMag-std()**	*Type Numeric*  
 Standard deviation of the gravity acceleration magnitude. Quantity is a scalar unit, G’s of gravitational acceleration.( t denotes time series. )
 
-tBodyAccJerkMag-mean()	Type Numeric
+>**tBodyAccJerkMag-mean()**	*Type Numeric*  
 Mean jerk body acceleration magnitude. Quantity is the time rate of change of acceleration, units, G’s/second. It is the square root of the sum of the squares of the XYZ components. ( t denotes time series. )
 
-tBodyAccJerkMag-std()	Type Numeric
+>**tBodyAccJerkMag-std()**	*Type Numeric*  
 Standard deviation of the gravity acceleration magnitude. Quantity is the time rate of change of acceleration, units, G’s/second.( t denotes time series. )
  
-tBodyGyroMag-mean()	Type Numeric
+>**tBodyGyroMag-mean()**	*Type Numeric*  
 Mean jerk body acceleration magnitude.Quantity has units of radians/second. It is the square root of the sum of the squares of the XYZ components. ( t denotes time series. )
 
-tBodyGyroMag-std()	Type Numeric
+>**tBodyGyroMag-std()**		*Type Numeric*  
 Standard deviation of the gravity acceleration magnitude. Quantity has units of radians/second. ( t denotes time series. )
   
-tBodyGyroJerkMag-mean()	Type Numeric
+>**tBodyGyroJerkMag-mean()**	*Type Numeric*  
 Mean body gyro-jerk product magnitude. Quantity has units of G’s/sq.second. It is the square root of the sum of the squares of the XYZ components. ( t denotes time series. )
 
-tBodyGyroJerkMag-std()	Type Numeric
+>**tBodyGyroJerkMag-std()**	*Type Numeric*  
 Standard deviation of the body gyro-jerk product magnitude. Quantity has units of G’s/sq.second. ( t denotes time series. )
   
 
+#####Following are time dependent quantities:
 
-
-
-
-Following are time dependent quantities:
-
-fBodyAcc-mean()-X		Type Numeric
+>**fBodyAcc-mean()-X**		*Type Numeric*  
 FFT of the mean body acceleration in X-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( f denotes frequency domain. )
 	
-fBodyAcc-mean()-Y		Type Numeric
+>**fBodyAcc-mean()-Y**		*Type Numeric*  
 FFT of the mean body acceleration in Y-direction. Quantity is a scalar unit, G’s of gravitational acceleration. ( f denotes frequency domain. )
 	
-fBodyAcc-mean()-Z		Type Numeric
+>**fBodyAcc-mean()-Z**		*Type Numeric*  
 FFT of the mean body acceleration in Z-direction. Quantity is a scalar unit, G’s of gravitational acceleration.  ( f denotes frequency domain. )
 	
-fBodyAcc-std()-X		Type Numeric
+>**fBodyAcc-std()-X**		*Type Numeric*  
 Standard deviation of the FFT of body acceleration in X-direction. Quantity is a scalar unit, G’s of gravitational acceleration.  ( f denotes frequency domain. )
 	
-fBodyAcc-std()-Y		Type Numeric
+>**fBodyAcc-std()-Y**		*Type Numeric*  
 Standard deviation of the FFT of body acceleration in Y-direction. Quantity is a scalar unit, G’s of gravitational acceleration.  ( f denotes frequency domain. )
 
-fBodyAcc-std()-Z		Type Numeric
+>**fBodyAcc-std()-Z**			*Type Numeric*  
 Standard deviation of the FFT of body acceleration in Z-direction. Quantity is a scalar unit, G’s of gravitational acceleration.  ( f denotes frequency domain. )
 
-fBodyAcc-meanFreq()-X	Type Numeric
+>**fBodyAcc-meanFreq()-X**		*Type Numeric*  
 Mean body acceleration frequency in X-direction. Quantity is a scalar unit, Hz. ( f denotes frequency domain. )
 	
-fBodyAcc-meanFreq()-Y	Type Numeric
+>**fBodyAcc-meanFreq()-Y**		*Type Numeric*  
 Mean body acceleration frequency in Y-direction. Quantity is a scalar unit, Hz. ( f denotes frequency domain. )
 
-fBodyAcc-meanFreq()-Z	Type Numeric
+>**fBodyAcc-meanFreq()-Z**		*Type Numeric*  
 Mean body acceleration frequency in Z-direction. Quantity is a scalar unit, Hz. ( f denotes frequency domain. )
 	
-fBodyAccJerk-mean()-X	Type Numeric
+>**fBodyAccJerk-mean()-X**	*Type Numeric*  
 FFT of the mean body jerk acceleration in X-direction. Quantity is the time rate of change of acceleration, units, G’s/second.  ( f denotes frequency domain. )
 	
-fBodyAccJerk-mean()-Y	Type Numeric
+>**fBodyAccJerk-mean()-Y**	*Type Numeric*  
 FFT of the mean body jerk acceleration in Y-direction. Quantity is the time rate of change of acceleration, units, G’s/second. ( f denotes frequency domain. )
 	
-fBodyAccJerk-mean()-Z	Type Numeric
+>**fBodyAccJerk-mean()-Z**	*Type Numeric*  
 FFT of the mean body jerk acceleration in Z-direction. Quantity is the time rate of change of acceleration, units, G’s/second.   ( f denotes frequency domain. )
 	
-fBodyAccJerk-std()-X		Type Numeric
+>**fBodyAccJerk-std()-X**		*Type Numeric*  
 Standard deviation of the FFT of body jerk acceleration in X-direction. Quantity is the time rate of change of acceleration, units, G’s/second.   ( f denotes frequency domain. )
 	
-fBodyAccJerk-std()-Y		Type Numeric
+>**fBodyAccJerk-std()-Y**		*Type Numeric*  
 Standard deviation of the FFT of body jerk acceleration in Y-direction. Quantity is the time rate of change of acceleration, units, G’s/second.   ( f denotes frequency domain. )
 
-fBodyAccJerk-std()-Z		Type Numeric
+>**fBodyAccJerk-std()-Z**		*Type Numeric*  
 Standard deviation of the FFT of body jerk acceleration in Z-direction. Quantity is the time rate of change of acceleration, units, G’s/second. ( f denotes frequency domain. )
 
-fBodyAccJerk-meanFreq()-X	Type Numeric
+>**fBodyAccJerk-meanFreq()-X**		*Type Numeric*  
 Mean body jerk acceleration frequency in X-direction. Quantity is a scalar unit, Hz. ( f denotes frequency domain. )
 	
-fBodyAccJerk-meanFreq()-Y	Type Numeric
+>**fBodyAccJerk-meanFreq()-Y**	*Type Numeric*  
 Mean body jerk acceleration frequency in Y-direction. Quantity is a scalar unit, Hz. ( f denotes frequency domain. )
 
-fBodyAccJerk-meanFreq()-Z	Type Numeric
+>**fBodyAccJerk-meanFreq()-Z**		*Type Numeric*  
 Mean body jerk acceleration frequency in Z-direction. Quantity is a scalar unit, Hz. ( f denotes frequency domain. )
 	
-fBodyGyro-mean()-X		Type Numeric
+>**fBodyGyro-mean()-X**			*Type Numeric*  
 FFT of the mean body angular velocity in X-direction. Quantity is in units radians/second.  ( f denotes frequency domain. )
 	
-fBodyGyro-mean()-Y		Type Numeric
+>**fBodyGyro-mean()-Y**		*Type Numeric*  
 FFT of the mean body angular velocity in Y-direction. Quantity is in units radians/second.  ( f denotes frequency domain. )
 	
-fBodyGyro-mean()-Z		Type Numeric
+>**fBodyGyro-mean()-Z**		*Type Numeric*  
 FFT of the mean body angular velocity in Z-direction. Quantity is in units radians/second.  ( f denotes frequency domain. )
 	
-fBodyGyro-std()-X		Type Numeric
+>**fBodyGyro-std()-X**		*Type Numeric*  
 Standard deviation of the FFT of body angular velocity in X-direction.  Quantity is in units radians/second.  ( f denotes frequency domain. )
 
-fBodyGyro-std()-Y		Type Numeric
+>**fBodyGyro-std()-Y**		*Type Numeric*  
 Standard deviation of the FFT of body angular velocity in X-direction.  Quantity is in units radians/second.  ( f denotes frequency domain. )
 
-fBodyGyro-std()-Z		Type Numeric
+>**fBodyGyro-std()-Z**		*Type Numeric*  
 Standard deviation of the FFT of body angular velocity in X-direction.  Quantity is in units radians/second.  ( f denotes frequency domain. )
 
-fBodyGyro-meanFreq()-X	Type Numeric
+>**fBodyGyro-meanFreq()-X**	*Type Numeric*  
 Mean body angular velocity frequency in X-direction. Quantity is a scalar unit, Hz. ( f denotes frequency domain. )
 	
-fBodyGyro-meanFreq()-Y	Type Numeric
+>**fBodyGyro-meanFreq()-Y**	*Type Numeric*  
 Mean body angular velocity frequency in Y-direction. Quantity is a scalar unit, Hz. ( f denotes frequency domain. )
 
-fBodyGyro-meanFreq()-Z	Type Numeric
+>**fBodyGyro-meanFreq()-Z**	*Type Numeric*  
 Mean body angular velocity frequency in Z-direction. Quantity is a scalar unit, Hz. ( f denotes frequency domain. )
 	
-fBodyAccMag-mean()	Type Numeric
+>**fBodyAccMag-mean()**	Type Numeric
 FFT of the mean body acceleration magnitude. Quantity is a scalar unit, G’s of gravitational acceleration.  ( f denotes frequency domain. )
 	
-fBodyAccMag-std()		Type Numeric
+>**fBodyAccMag-std()**		*Type Numeric*  
 Standard deviation of the FFT of body acceleration magnitude. Quantity is a scalar unit, G’s of gravitational acceleration.  ( f denotes frequency domain. )
 
-fBodyAccMag-meanFreq()	Type Numeric
+>**fBodyAccMag-meanFreq()**	*Type Numeric*  
 Mean body acceleration magnitude frequency. Quantity is a scalar unit, Hz. ( f denotes frequency domain. )
 	
-fBodyBodyAccJerkMag-mean()	Type Numeric
+>**fBodyBodyAccJerkMag-mean()**	*Type Numeric*  
 FFT of the mean body jerk acceleration magnitude. Quantity is the time rate of change of acceleration, units, G’s/second.  ( f denotes frequency domain. )
 	
-fBodyBodyAccJerkMag-std()		Type Numeric
+>**fBodyBodyAccJerkMag-std()**	*Type Numeric*  
 Standard deviation of the FFT of body jerk acceleration magnitude. Quantity is the time rate of change of acceleration, units, G’s/second. ( f denotes frequency domain. )
 
-fBodyBodyAccJerkMag-meanFreq()	Type Numeric
+>**fBodyBodyAccJerkMag-meanFreq()**	*Type Numeric*  
 Mean body jerk acceleration magnitude frequency. Quantity is a scalar unit, Hz. ( f denotes frequency domain. )
 
-fBodyBodyGyroMag-mean()	Type Numeric
+>**fBodyBodyGyroMag-mean()**	*Type Numeric*  
 FFT of the mean body angular velocity magnitude. Quantity is in radians/second.  ( f denotes frequency domain. )
 	
-fBodyBodyGyroMag-std()	Type Numeric
+>**fBodyBodyGyroMag-std()**	*Type Numeric*  
 Standard deviation of the FFT of body angular velocity magnitude. Quantity is in radians/second.  ( f denotes frequency domain. )
 
-fBodyBodyGyroMag-meanFreq()	Type Numeric
+>**fBodyBodyGyroMag-meanFreq()**	*Type Numeric*  
 Mean body angular velocity magnitude frequency. Quantity is a scalar unit, Hz. ( f denotes frequency domain. )
 
-fBodyBodyGyroJerkMag-mean()	Type Numeric
+>**fBodyBodyGyroJerkMag-mean()**	*Type Numeric*  
 FFT of the body gyro-jerk product magnitude. Quantity has units of G’s/sq.second. ( f denotes frequency domain. )
 	
-fBodyBodyGyroJerkMag-std()	Type Numeric
+>**fBodyBodyGyroJerkMag-std()**	*Type Numeric*  
 Standard deviation of the FFT of the body gyro-jerk product magnitude. Quantity has units of G’s/sq.second.  ( f denotes frequency domain. )
 
-fBodyBodyGyroJerkMag-meanFreq()	Type Numeric
+>**fBodyBodyGyroJerkMag-meanFreq()**	*Type Numeric*  
 Mean body gyro-jerk product magnitude frequency. Quantity is a scalar unit, Hz. ( f denotes frequency domain. )
 
 
